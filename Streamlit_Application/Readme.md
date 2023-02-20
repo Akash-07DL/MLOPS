@@ -18,10 +18,11 @@ Deepface has a custom face detection function in its interface. We can also use 
 Here we used the detector backend as "retinaface", it is slow but up to the mark accuracy.
 Read more at: https://viso.ai/computer-vision/deepface/
 
+Note: For Helemt and Mask part - We didn't tried for very good accuracy as our aim is to simply build a web application which will be running on local host. 
 
 # Detect Helmet:
-
+We will use the cv::dnn::readnet or cv2.dnn.ReadNet() function for loading the network into memory. It automatically detects configuration and framework based on the file name specified. We will give the input trained weight file and the configuration(.cfg) file. For classes we will use obj.names. 
 
 
 # Detect Mask:
-
+We will use cv2.dnn_DetectionModel. DetectionModel allows to set params for preprocessing input image. DetectionModel creates net from file with trained weights and config, sets preprocessing input, runs forward pass and return result detections. For DetectionModel SSD, Faster R-CNN, YOLO topologies are supported.
