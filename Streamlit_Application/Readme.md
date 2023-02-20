@@ -1,4 +1,4 @@
-we will detect Person, Face, Mask and helmet in a video or CCTV video and will build a web application with streamlit.
+we will detect Person, Face, Mask and helmet in a video or CCTV video and will build a web application with **Streamlit**.
 
 # Detect Person:
 For Person detection we will use pre-trained official YOLOV3 weight. We will use ImageAI. 
